@@ -28,11 +28,11 @@ async def genpicture(file: UploadFile = File(...)):
 
         # Example usage
         image1_path = tmp_file.name
-        image2_path = "frame_name.png"
-        output_path = "combined_image3.png"
+        image2_path = "resource/frame_name.png"
+        output_path = "resource/combined_image3.png"
         combine_and_resize_images(image1_path, image2_path, output_path)
          
-    return FileResponse("combined_image3.png")
+    return FileResponse("resource/combined_image3.png")
 
    # return Response(content=image_bytes, media_type="image/png")
     #return {"message": "SUCCESS " + output_path}
